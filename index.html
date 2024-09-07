@@ -1,1 +1,18 @@
-Hello world
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Time Example</title>
+</head>
+<body>
+    <p id="time"></p>
+
+    <script>
+        function showTime() {
+            var dt = new Date();
+            document.getElementById("time").innerHTML = dt.toLocaleTimeString();
+        }
+        setInterval(showTime, 1000); // Update every second
+    </script>
+</body>
+</html>
